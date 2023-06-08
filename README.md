@@ -6,7 +6,7 @@ The Cloud Bootcamp - Bootcamp DevOps Cloud
 </h1>
 
 <h2 align="center">
-    Version Control with Git and GitHub
+    Deployment of Git and GitHub as Software Version Control + Proof of Concept (PoC), Process of Commit, Push, and Revert Code Changes
 </h2>
 
 <p align="center">
@@ -44,16 +44,9 @@ The Cloud Bootcamp - Bootcamp DevOps Cloud
 
 ## Description
 
-This project consists of creating a structure in AWS for a auto scaling application. It is made up of the following components:
-- VPC
-- Internet Gateway
-- Subnets
-- Route Tables
-- Security Groups
-- Load Balancer
-- Auto Scaling Group
-- CloudWatch
-- RDS
+In this project based on a real-world scenario, I acted as a DevOps Engineer to migrate application and website code from a local repository to remote repositories on GitHub.
+
+My mission was to upload the code stored on my computer to GitHub, and validate the features between the repositories (local and remote) by running some tests of code changes. Besides, to complete the validation process, I had to run a rollback procedure/reverting test.
 
 ---
 
