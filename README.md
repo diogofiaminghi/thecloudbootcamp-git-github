@@ -1,6 +1,3 @@
-# thecloudbootcamp-git-github
-The Cloud Bootcamp - Bootcamp DevOps Cloud
-
 <h1 align="center">
    <a href="#"> The Cloud Bootcamp - Git and GitHub </a>
 </h1>
