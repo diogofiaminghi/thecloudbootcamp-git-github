@@ -30,16 +30,7 @@ The Cloud Bootcamp - Bootcamp DevOps Cloud
 	 Status: Finished
 </h4>
 
-<p align="center">
- <a href="#description">Description</a> •
- <a href="#pre-requisites">Pre-requisites</a> • 
- <a href="#solution-architecture">Solution Architecture</a> • 
- <a href="#how-it-works">How it works</a> • 
- <a href="#tech-stack">Tech Stack</a> • 
- <a href="#author">Author</a> • 
- <a href="#license">License</a>
-
-</p>
+![Project-Diagram](https://github.com/diogofiaminghi/thecloudbootcamp-git-github/blob/main/01.png)
 
 
 ## Description
@@ -61,122 +52,7 @@ In addition, it is good to have an editor to work with the code like [VSCode] (h
 
 ## Solution Architecture
 
-![Project-Diagram](https://github.com/diogofiaminghi/terraform-application-auto-scaling/blob/10938393ee3062921453eb6dca37b8b700caba1f/terraform-application-auto-scaling.drawio.png)
-
----
-
-## How it works
-
-1 - Clone this repository.
-
-```bash
-git clone git@github.com:diogofiaminghi/terraform-application-auto-scaling.git
-```
-
-2 - Open console AWS. 
-
-> IMPORTANT: Make sure you are in "us-east-1" region
-
-![Project-Diagram](https://github.com/diogofiaminghi/terraform-application-auto-scaling/blob/e07ee09f9b5c7bd07793553e25245a5e9c9a76cc/01%20-%20Console%20AWS.PNG)
-
----
-
-- Go to EC2 
-
-![Project-Diagram](https://github.com/diogofiaminghi/terraform-application-auto-scaling/blob/e07ee09f9b5c7bd07793553e25245a5e9c9a76cc/02%20-%20Console%20AWS.PNG)
-
----
-
-- Network & Security >> Key Pairs 
-
-![Project-Diagram](https://github.com/diogofiaminghi/terraform-application-auto-scaling/blob/e07ee09f9b5c7bd07793553e25245a5e9c9a76cc/03%20-%20Console%20AWS.PNG)
-
----
-
-- Create Key Pair 
-
-![Project-Diagram](https://github.com/diogofiaminghi/terraform-application-auto-scaling/blob/e07ee09f9b5c7bd07793553e25245a5e9c9a76cc/04%20-%20Console%20AWS.PNG)
-
----
-	
-- Name = terraform-application-auto-scaling
-- Key pair type = RSA
-- Privete key format = .pem
-- Click on "Create key pair"
-
-![Project-Diagram](https://github.com/diogofiaminghi/terraform-application-auto-scaling/blob/e07ee09f9b5c7bd07793553e25245a5e9c9a76cc/05%20-%20Console%20AWS.PNG)
-
----
-	
-- The key is downloaded automatically
-
-![Project-Diagram](https://github.com/diogofiaminghi/terraform-application-auto-scaling/blob/e07ee09f9b5c7bd07793553e25245a5e9c9a76cc/06%20-%20Console%20AWS.PNG)
-
-> IMPORTANT: Copy the key to the same project directory (keep your key in a safe place and don't share it. You will use it to access the instances).
-
----
-
-- Change permission.
-
-```bash
-chmod 400 terraform-application-auto-scaling.pem
-```
-
-3 - Add the key-name in your .gitignore file.
-
-4 - You must now configure your AWS Access Keys using the bash terminal.
-
-```bash
-export AWS_ACCESS_KEY_ID=XXXXXXXXXXXXXXXX
-```
-```bash
-export AWS_SECRET_ACCESS_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-```
-
-5 - Terraform Commands in Project Folder
-```bash
-terraform init
-```
-
-```bash
-terraform fmt
-```
-
-```bash
-terraform validate
-```
-
-```bash
-terraform plan -out=plan.out
-```
-
-```bash
-terraform apply plan.out
-```
-
-6 - Now, to prove that everything worked, we will test the Auto Scaling.
-
-- AWS console >> EC2 >> Instances >> click on WEB instance >> monitoring >> CPU Utilization >> View in metrics >> periodo 10s >> auto-refresching 10s. Repit this for the second WEB instance in another browser tab.
-
-- In another browser tab, open Auto Scaling Grou >> Activity >> Activity history
-
-- In Load Balancer, copy the DNS name >> paste in another browser tab >> the html page must be loaded
-
-- connect via ssh to both web instances
-
-```bash
-ssh -i "terraform-application-auto-scaling.pem" ubuntu@the-public-ip-here
-```
-```bash
-sudo stress-ng --cpu 32 --timeout 600 --metrics-brief
-```
-
-- observe the number of instances being increased and decreased as stress rises and falls. The test will end in 10 minutes.
-
-7 - Do not forget to destroy the provisioned structure otherwise you will be able to receive invoices.
-```bash
-terraform destroy
-```
+![Project-Diagram](https://github.com/diogofiaminghi/thecloudbootcamp-git-github/blob/main/02.png)
 
 ---
 
