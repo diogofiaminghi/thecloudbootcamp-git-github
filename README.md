@@ -69,7 +69,7 @@ The following tools were used in the construction of the project:
 
 ## License
 
-This project is under the license [MIT](https://github.com/diogofiaminghi/terraform-application-auto-scaling/blob/1804cdb66b6d73a1ff8b62d92cacad6110d655d7/LICENSE).
+This project is under the license [MIT](https://github.com/diogofiaminghi/thecloudbootcamp-git-github/blob/main/LICENSE).
 
 Made with love by Diogo Fiaminghi 👋🏽 [Get in Touch!](Https://www.linkedin.com/in/diogofiaminghi/)
 
