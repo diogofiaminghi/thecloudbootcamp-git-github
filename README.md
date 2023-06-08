@@ -41,15 +41,6 @@ My mission was to upload the code stored on my computer to GitHub, and validate 
 
 ---
 
-## Pre-requisites
-
-Before you begin, you will need to have the following tools installed on your machine:
-[Terraform] (https://www.terraform.io/) and [Git] (https://git-scm.com).
-You will need to have a [AWS Account] (https://aws.amazon.com/).
-In addition, it is good to have an editor to work with the code like [VSCode] (https://code.visualstudio.com/).
-
----
-
 ## Solution Architecture
 
 ![Project-Diagram](https://github.com/diogofiaminghi/thecloudbootcamp-git-github/blob/main/02.png)
@@ -60,8 +51,6 @@ In addition, it is good to have an editor to work with the code like [VSCode] (h
 
 The following tools were used in the construction of the project:
 
--   **[AWS](https://aws.amazon.com/?nc1=h_ls)**
--   **[Terraform](https://www.terraform.io/)**
 -   **[VSCode](https://code.visualstudio.com/)**
 -   **[Git](https://git-scm.com/)**
 -   **[GitHub](https://github.com/)**
